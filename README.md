@@ -59,6 +59,7 @@ every time someone creates a new cheese! Enter **dynamic routes**:
 # config/routes.rb
 
 get '/cheeses/:id', to: 'cheeses#show'
+
 ```
 
 A breakdown of the dynamic route process flow is below:
@@ -116,7 +117,7 @@ To correct this error, let's draw a route in `config/routes.rb` that maps to a
 show action in the `CheesesController`:
 
 ```rb
-get '/cheeses/:id', to: 'cheeses#show'
+
 ```
 
 You will notice something that's different from the static route. The `/:id`
